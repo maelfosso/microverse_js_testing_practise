@@ -43,5 +43,5 @@ test('divide two number', () => {
 });
 
 test('divide by 0 is not allowed', () => {
-  expect(divide(4, 0)).toThrow();
+  expect(() => divide(6,0)).toThrow();
 });
