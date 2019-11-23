@@ -18,5 +18,4 @@ const multiply = (a, b) => {
   return a * b;
 }
 
-// export { add, subtrack, divide, multiply }
-module.exports = { add, subtrack, divide, multiply }
+export { add, subtrack, divide, multiply }
