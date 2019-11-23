@@ -14,7 +14,13 @@ test('encryption wrap from z to a', () => {
 });
 
 test('encryption with punctuation', () => {
-  expect(cipher('Hello World !!', 1)).toBe('ifmmp xpsme !!');
-  expect(cipher('How are you ?', 5)).toBe('ipx bsf zpv ?');
+  expect(cipher('hello world !!', 1)).toBe('ifmmp xpsme !!');
+  expect(cipher('how are you ?', 5)).toBe('mtb fwj dtz ?');
 });
+
+test('encryption keep the same case', () => {
+  expect(cipher('Hello World !!', 1)).toBe('Ifmmp Xpsme !!');
+  expect(cipher('How are you ?', 5)).toBe('Mtb fwj dtz ?');
+});
+
 
